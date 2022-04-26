@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #fff;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	// background-color: black;
+	background-color: black;
+}
+.navbar {
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 99;
+	a,
+	i {
+		color: #fff;
+	}
+	.active {
+		color: royalblue;
+	}
+	.container-fluid {
+		.btnx {
+			color: transparent;
+			cursor: pointer;
+		}
+		.navbar-brand {
+			font-weight: bold;
+			span {
+				color: royalblue;
+			}
+		}
+		.navbar-toggler-icon {
+			color: #fff;
+			.fa-bars {
+				padding: 5px;
+			}
+		}
+	}
+}
+
+.orderCar {
+	padding: 0 15px;
+
+	.orderLeftSide {
+		margin: 20px 20px 0 0;
+		max-width: 300px;
+		.mainInfo {
+			font-size: 21px;
+			span {
+				font-weight: 800;
+				color: royalblue;
+			}
+		}
+
+		.daysCount {
+			padding: 10px;
+			.daysForm {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				label {
+					margin: 5px 10px;
+					width: 110px;
+				}
+				.datepickerIn {
+					border: none;
+					border-radius: 5px;
+					padding: 5px 5px;
+					max-width: 270px;
+				}
+			}
+		}
+		.orderOptions {
+			padding: 10px;
+			.orderForm {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		.customerInfo {
+			padding: 10px;
+			.customerForm {
+				input,
+				textarea {
+					width: 100%;
+					padding: 5px 5px;
+					border-radius: 5px;
+					border: none;
+				}
+				input {
+					margin: 10px 0;
+				}
+				textarea {
+					height: 150px;
+				}
+			}
+		}
+		.legalInfo {
+			padding: 10px;
+			.legalForm {
+				label {
+					margin: 5px 0;
+				}
+			}
+		}
+		.orderNow {
+			text-align: center;
+			.orderBtn {
+				width: 100%;
+				padding: 10px;
+				border: none;
+				border-radius: 10px;
+				color: #fff;
+				background-color: red;
+			}
+		}
+	}
+	.orderRightSide {
+		max-width: 300px;
+		.orderBox {
+			margin: 15px 0;
+			background-color: rgb(15, 15, 15);
+			img {
+				display: block;
+				width: 100%;
+				border-radius: 5px;
+			}
+			.textInfo {
+				.title {
+					padding-bottom: 20px;
+					.carName {
+						font-size: 25px;
+						font-weight: bold;
+
+						color: royalblue;
+					}
+
+					.deposit,
+					.bail {
+						font-size: 13px;
+						color: #b9b9b9;
+					}
+				}
+				.packet {
+					font-size: 12px;
+				}
+				.bundle {
+					display: flex;
+					flex-direction: row;
+					padding-bottom: 20px;
+					i {
+						color: #ffcd00;
+						padding: 10px;
+						font-size: 20px;
+						margin: auto 0;
+					}
+					.desc {
+						p {
+							font-size: 13px;
+							color: #b9b9b9;
+						}
+					}
+				}
+				.title,
+				.packet,
+				.bundle {
+					padding: 0 10px;
+				}
+			}
+		}
+		.costInfo {
+			padding: 0 10px;
+			margin-top: 30px;
+			.rentCost,
+			.addonsCost,
+			.totalCost {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin: 10px 0;
+				.priceTag {
+					margin-right: 15px;
+				}
+			}
+			.totalCost {
+				p {
+					line-height: 25px;
+					span {
+						color: royalblue;
+						font-size: 25px;
+						font-weight: 800;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 5px;
+	margin: 30px 0;
+	background-color: black;
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 576px) {
+	.orderCar {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.orderLeftSide {
+			margin: 0 20px 0 0;
+			max-width: 400px;
+		}
+		.orderRightSide {
+			max-width: 300px;
+			.orderBox {
+				position: sticky;
+				top: 50px;
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	.orderCar {
+		.orderRightSide {
+			max-width: 400px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+}

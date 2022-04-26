@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script
+			src="https://kit.fontawesome.com/c566b72226.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="../css/reservation.css" />
+	</head>
+	<body>
+		<nav
+			id="navbar"
+			class="navbar navbar-expand-lg position-sticky top-0 w-100 py-1"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html">Car<span>Rent</span></a>
+				<button
+					class="navbar-toggler btnx"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"
+						><i class="fa-solid fa-bars"></i
+					></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#home"
+							>Strona Główna</a
+						>
+						<a class="nav-link" href="../index.html#cars">Samochody</a>
+						<a class="nav-link" href="../index.html#aboutus">O nas</a>
+						<a class="nav-link" href="../index.html#pricing">Cennik</a>
+						<a class="nav-link" href="../index.html#contact">Kontakt</a>
+						<a class="nav-link" href="../html/bmwm4.html">ZAREZERWUJ</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<section class="orderCar">
+				<div class="orderLeftSide">
+                    <div class="daysCount">
+                        <p class="mainInfo"> <span>1/3</span> Wybierz okres wynajmu</p>
+                        <form class="daysForm">
+                            <label>
+                                <input type="radio" name="daysBtn" />
+                                <span>Dzień</span>
+                            </label>
+    
+                            <label>
+                                <input type="radio" name="daysBtn" />
+                                <span>Weekend</span>
+                            </label>
+    
+                            <label>
+                                <input type="radio" name="daysBtn" />
+                                <span>Tydzień</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="daysBtn" />
+                                <span>Miesiąc</span>
+                            </label>
+							<input type="text" id="datepicker" class="datepickerIn" placeholder=" OD">
+                        </form>
+                        <form class="dateForm">
+                           
+                            <!-- <input type="text" id="datepicker2" class="datepickerOut" placeholder=" DO"> -->
+                        </form>
+                    </div>
+                    <div class="orderOptions">
+                        <p class="mainInfo"><span>2/3</span> Dodatkowe usługi</p>
+                        <form class="orderForm">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Pakiet myjni</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" />
+                                <span>Zwrot bez tankowania</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" />
+                                <span>Coś się wymyśli</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="customerInfo">
+                        <p class="mainInfo"><span>3/3</span> Dane kontaktowe</p>
+                        <form class="customerForm">
+                            <input type="text" placeholder="Imie" />
+                            <input type="text" placeholder="Nazwisko" />
+                            <input type="email" placeholder="Email" />
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Nr telefonu"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                required
+                            />
+                            <input type="text" placeholder="Ulica" />
+                            <input type="text" placeholder="Kod Pocztowy" />
+                            <input type="text" placeholder="Miasto" />
+                            <textarea placeholder="Dodatkowe uwagi"></textarea>
+                        </form>
+                    </div>
+                    <div class="legalInfo">
+                        <form class="legalForm">
+                            <label>
+                                <input type="checkbox">
+                                <span>Chcę otrzymać faktura</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>*Wyrażam zgodę na przetwarzanie moich danych osobowych (imię, nazwisko, numer telefonu, adres e-mail) oraz przesyłanie informacji handlowych w celach marketingowych przez CarRent zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (tekst jednolity: Dz.U. 2014 poz. 1182).</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Wyrażam zgodę na otrzymywanie od CarRent informacji i ofert handlowych drogą elektroniczną zgodnie z ustawą z dnia 18.07.2002 r. (Dz.U. nr 144, poz. 1204 z późn. zm.) o świadczeniu usług drogą elektroniczną.</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="orderNow">
+                        <button class="orderBtn">Zarezerwuj Teraz</button>
+                    </div>
+                </div>
+                <div class="orderRightSide">
+                    <div class="orderBox">
+						<img src="../images/cars/M4CS/front.webp" alt="" />
+						<div class="textInfo">
+							<div class="title">
+								<p class="carName">BMW M4CS</p>
+								<p class="deposit">Kaucja zwrotna: 5000 zł*</p>
+						<p class="bail">
+							*kaucja jest zwracana w ciągu 7 dni od momentu zwrotu pojazdu
+							<br />
+							*wszystkie podane ceny są cenami brutto (posiadają wliczony
+							podatek VAT 23%)
+						</p>
+							</div>
+							<p class="packet">W pakiecie</p>
+							<div class="bundle">
+								<i class="fa-solid fa-circle-check"></i>
+								<div class="desc">
+									<h5>Assistance</h5>
+									<p>
+										Pomoc na miejscu lub zapewnienie lawety w razie awarii lub
+										szkody komunikacyjnej.
+									</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="costInfo">
+							<div class="rentCost">
+								<p class="priceTag">Cena najmu</p>
+								<p>9000 zł</p>
+							</div>
+							<div class="addonsCost">
+								<p class="priceTag">Dodatki</p>
+								<p>1000 zł</p>
+							</div>
+							<div class="totalCost">
+								<p class="priceTag">Razem</p>
+								<p><span>10000</span>zł</p>
+							</div>
+						</div>
+					</div>
+                </div>
+			</section>
+		</main>
+		<footer>
+			<p>Wszystkie prawa zastrzeżone © CarRent</p>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../js/datepicker.js"></script>
+	</body>
+</html>

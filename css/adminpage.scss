@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #fff;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+}
+.navbar {
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 99;
+	a,
+	i {
+		color: #fff;
+	}
+	.active {
+		color: royalblue;
+	}
+	.container-fluid {
+		.btnx {
+			color: transparent;
+			cursor: pointer;
+		}
+		.navbar-brand {
+			font-weight: bold;
+			span {
+				color: royalblue;
+			}
+		}
+		.navbar-toggler-icon {
+			color: #fff;
+			.fa-bars {
+				padding: 5px;
+			}
+		}
+	}
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		.container-fluid {
+			width: 69%;
+			.collapse {
+				justify-content: flex-end;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+}
