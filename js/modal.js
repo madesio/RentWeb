@@ -3,7 +3,7 @@ const rentBtn = document.querySelector('.rentBtn');
 
 // const closeBtn = document.querySelector('.close');
 const modalShadow = document.querySelector('.modal-shadow');
-
+const nav = document.querySelector('.navbar')
 
 
 
@@ -12,6 +12,7 @@ const modalShadow = document.querySelector('.modal-shadow');
 const showModal = () => {
 	if (!(modalShadow.style.display === 'block')) {
 		modalShadow.style.display = 'block';
+		nav.style.display = 'none'
 		let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 		if(width < 576){
 			window.scrollTo({ top: 100, behavior: 'smooth' });
@@ -25,6 +26,7 @@ const showModal = () => {
 
 	} else {
 		modalShadow.style.display = 'none';
+		nav.style.display = 'block'
 	}
 	modalShadow.classList.toggle('modal-animation');
 };

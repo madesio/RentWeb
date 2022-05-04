@@ -475,12 +475,12 @@ body {
 }
 
 .modal-shadow .modal .orderCar {
-  margin: 0 20px;
+  min-width: 290px;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide {
   margin: 20px 20px 0 0;
-  max-width: 300px;
+  margin: 0 auto;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .mainInfo {
@@ -493,7 +493,7 @@ body {
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .daysCount {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .daysCount .daysForm {
@@ -521,7 +521,7 @@ body {
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .orderOptions {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .orderOptions .orderForm {
@@ -535,7 +535,7 @@ body {
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .customerInfo {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .customerInfo .customerForm input,
@@ -551,11 +551,12 @@ body {
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .customerInfo .customerForm textarea {
+  margin-top: 10px;
   height: 150px;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .legalInfo {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .modal-shadow .modal .orderCar .orderLeftSide .legalInfo .legalForm label {
@@ -576,7 +577,7 @@ body {
 }
 
 .modal-shadow .modal .orderCar .orderRightSide {
-  max-width: 300px;
+  margin: 0 auto;
 }
 
 .modal-shadow .modal .orderCar .orderRightSide .orderBox {
@@ -711,6 +712,9 @@ footer {
 }
 
 @media (min-width: 375px) {
+  .modal-shadow .modal {
+    min-width: 360px;
+  }
   .leftSide .carPrices .box {
     width: 165px;
     height: 100px;
@@ -724,6 +728,9 @@ footer {
 }
 
 @media (min-width: 576px) {
+  .modal-shadow .modal {
+    min-width: 560px;
+  }
   .modal-shadow .modal .orderCar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -734,10 +741,9 @@ footer {
   }
   .modal-shadow .modal .orderCar .orderLeftSide {
     margin: 0 20px 0 0;
-    max-width: 400px;
+    max-width: 300px;
   }
   .modal-shadow .modal .orderCar .orderRightSide {
-    max-width: 300px;
     position: relative;
   }
   .car .container .carPrices .box {
@@ -751,6 +757,25 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .modal-shadow .modal {
+    min-width: 750px;
+    margin: 0 auto;
+  }
+  .modal-shadow .modal .orderCar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal-shadow .modal .orderCar .orderLeftSide {
+    margin: 0 20px 0 0;
+    min-width: 400px;
+  }
+  .modal-shadow .modal .orderCar .orderRightSide {
+    position: relative;
+  }
   .car {
     display: -webkit-box;
     display: -ms-flexbox;

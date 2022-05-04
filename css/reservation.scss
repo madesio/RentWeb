@@ -41,11 +41,16 @@ body {
 }
 
 .orderCar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 0 15px;
-
 	.orderLeftSide {
 		margin: 20px 20px 0 0;
-		max-width: 300px;
+		padding: 0 10px;
+		max-width: 340px;
+		flex-shrink: 0;
 		.mainInfo {
 			font-size: 21px;
 			span {
@@ -53,7 +58,13 @@ body {
 				color: royalblue;
 			}
 		}
+		.carDropdown {
+			padding: 10px;
+			.cars{
+				height: 30px;
 
+			}
+		}
 		.daysCount {
 			padding: 10px;
 			.daysForm {
@@ -119,6 +130,7 @@ body {
 	}
 	.orderRightSide {
 		max-width: 300px;
+
 		.orderBox {
 			margin: 15px 0;
 			background-color: rgb(15, 15, 15);
@@ -213,17 +225,17 @@ footer {
 @media (min-width: 576px) {
 	.orderCar {
 		position: relative;
-		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
 		justify-content: center;
+
 		.orderLeftSide {
 			margin: 0 20px 0 0;
-			max-width: 400px;
 		}
 		.orderRightSide {
-			max-width: 300px;
+			position: sticky;
+			top: 50px;
 			.orderBox {
-				position: sticky;
-				top: 50px;
 				margin: 0;
 			}
 		}
@@ -234,11 +246,11 @@ footer {
 }
 
 @media (min-width: 992px) {
-	.orderCar {
-		.orderRightSide {
-			max-width: 400px;
-		}
-	}
+	// .orderCar {
+	// 	.orderRightSide {
+	// 		max-width: 400px;
+	// 	}
+	// }
 }
 
 @media (min-width: 1200px) {

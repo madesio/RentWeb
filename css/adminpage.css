@@ -1,15 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   color: #fff;
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  background-color: #111111;
+}
+
+:required {
+  color: red;
+  background: red;
 }
 
 .navbar {
@@ -47,14 +51,240 @@ body {
   padding: 5px;
 }
 
+.addNewCar {
+  padding: 30px 0;
+}
+
+.addNewCar p {
+  margin: 0;
+}
+
+.addNewCar h2 {
+  color: royalblue;
+}
+
+.addNewCar .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox,
+.addNewCar .container .leftSide .carPrices .box,
+.addNewCar .container .leftSide .carDesc .descBox,
+.addNewCar .container .leftSide .carEquipment .equipmentBox,
+.addNewCar .container .leftSide .optionBox .optionDesc {
+  display: flex;
+  flex-direction: column;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox input,
+.addNewCar .container .leftSide .carPrices .box input,
+.addNewCar .container .leftSide .carDesc .descBox input,
+.addNewCar .container .leftSide .carEquipment .equipmentBox input,
+.addNewCar .container .leftSide .optionBox .optionDesc input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox input::placeholder,
+.addNewCar .container .leftSide .carPrices .box input::placeholder,
+.addNewCar .container .leftSide .carDesc .descBox input::placeholder,
+.addNewCar .container .leftSide .carEquipment .equipmentBox input::placeholder,
+.addNewCar .container .leftSide .optionBox .optionDesc input::placeholder {
+  color: #c0bfbf;
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox input::-webkit-outer-spin-button,
+.addNewCar .container .leftSide .carInfo .iconBox input::-webkit-inner-spin-button,
+.addNewCar .container .leftSide .carPrices .box input::-webkit-outer-spin-button,
+.addNewCar .container .leftSide .carPrices .box input::-webkit-inner-spin-button,
+.addNewCar .container .leftSide .carDesc .descBox input::-webkit-outer-spin-button,
+.addNewCar .container .leftSide .carDesc .descBox input::-webkit-inner-spin-button,
+.addNewCar .container .leftSide .carEquipment .equipmentBox input::-webkit-outer-spin-button,
+.addNewCar .container .leftSide .carEquipment .equipmentBox input::-webkit-inner-spin-button,
+.addNewCar .container .leftSide .optionBox .optionDesc input::-webkit-outer-spin-button,
+.addNewCar .container .leftSide .optionBox .optionDesc input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox input[type='number'],
+.addNewCar .container .leftSide .carPrices .box input[type='number'],
+.addNewCar .container .leftSide .carDesc .descBox input[type='number'],
+.addNewCar .container .leftSide .carEquipment .equipmentBox input[type='number'],
+.addNewCar .container .leftSide .optionBox .optionDesc input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.addNewCar .container .leftSide button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 50%;
+  color: royalblue;
+  background-color: transparent;
+}
+
+.addNewCar .container .leftSide {
+  padding: 0 10px;
+}
+
+.addNewCar .container .leftSide .photos {
+  margin-bottom: 50px;
+}
+
+.addNewCar .container .leftSide .photos p {
+  color: #c0bfbf;
+}
+
+.addNewCar .container .leftSide .photos .ptext {
+  padding: 0 10px;
+}
+
+.addNewCar .container .leftSide .photos .addPhotoForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.addNewCar .container .leftSide .photos .addPhotoForm .photoBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: royalblue;
+  height: 120px;
+  width: 46%;
+  margin: 5px 5px;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.addNewCar .container .leftSide .photos .addPhotoForm .photoBox p {
+  color: #fff;
+}
+
+.addNewCar .container .leftSide .photos .addPhotoForm .photoBox input {
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  cursor: pointer;
+}
+
+.addNewCar .container .leftSide .carDropdown .cars {
+  height: 44px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.addNewCar .container .leftSide .carInfo {
+  margin-bottom: 50px;
+}
+
+.addNewCar .container .leftSide .carInfo p {
+  margin: 0;
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox .radioChoice {
+  display: flex;
+  flex-direction: row;
+}
+
+.addNewCar .container .leftSide .carInfo .iconBox .radioChoice label span {
+  margin-left: 10px;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.addNewCar .container .leftSide .carPrices {
+  margin-bottom: 50px;
+}
+
+.addNewCar .container .leftSide .carEquipment .alertEqMsg {
+  display: none;
+  text-align: center;
+  color: red;
+}
+
+.addNewCar .container .leftSide .carDesc .alertDescMsg {
+  display: none;
+  text-align: center;
+  color: red;
+}
+
+.addNewCar .container .leftSide .carDesc .descBox textarea {
+  padding: 10px 5px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.addNewCar .container .leftSide .optionDesc .alertOptionMsg {
+  display: none;
+  text-align: center;
+  color: red;
+}
+
+.addNewCar .container .leftSide .optionDesc .optionBox label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addNewCar .container .leftSide .optionDesc .optionBox label span {
+  font-size: 12px;
+  color: #c0bfbf;
+}
+
+.addNewCar .container .leftSide .optionDesc .optionBox input {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 5px;
+}
+
+.addNewCar .container .leftSide .optionDesc .optionBox textarea {
+  padding: 10px 5px;
+  height: 100px;
+  width: 100%;
+}
+
+.addNewCar .container .leftSide .addNewCarBtn {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: red;
+}
+
+.addNewCar .container .rightSide {
+  padding: 0 10px;
+}
+
 @media (min-width: 992px) {
   .navbar .container-fluid {
     width: 69%;
   }
   .navbar .container-fluid .collapse {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
+  }
+  .addNewCar .container {
+    margin: 0 auto;
+    max-width: 42.5rem;
   }
 }
-/*# sourceMappingURL=adminpage.css.map */

@@ -397,10 +397,11 @@ body {
 		background-color: #111;
 		
 		.orderCar{
-			margin: 0 20px;
+			min-width: 290px;
 			.orderLeftSide{
 				margin: 20px 20px 0 0 ;
-				max-width: 300px;
+				
+				margin: 0 auto;
 	
 				.mainInfo {
 					font-size: 21px;
@@ -411,7 +412,7 @@ body {
 				}
 				
 				.daysCount {
-					padding: 10px;
+					padding: 0 10px;
 					.daysForm {
 						display: flex;
 						flex-direction: column;
@@ -430,14 +431,14 @@ body {
 		
 				}
 				.orderOptions {
-					padding: 10px;
+					padding: 0 10px;
 					.orderForm {
 						display: flex;
 						flex-direction: column;
 					}
 				}
 				.customerInfo {
-					padding: 10px;
+					padding: 0 10px;
 					.customerForm {
 						input,
 						textarea {
@@ -450,12 +451,13 @@ body {
 							margin: 10px 0;
 						}
 						textarea {
+							margin-top: 10px;
 							height: 150px;
 						}
 					}
 				}
 				.legalInfo {
-					padding: 10px;
+					padding: 0 10px;
 					.legalForm {
 						label {
 							margin: 5px 0;
@@ -476,7 +478,8 @@ body {
 				}
 			}
 			.orderRightSide{
-				max-width: 300px;
+				// max-width: 300px;
+				margin: 0 auto;
 				.orderBox {
 					margin: 15px 0;
 					background-color: rgb(15, 15, 15);
@@ -591,6 +594,22 @@ footer {
 }
 
 @media (min-width: 375px) {
+	.modal-shadow{
+		.modal{
+			min-width: 360px;
+			.orderCar{
+				.orderLeftSide{
+
+				}
+				.orderRightSide{
+
+
+
+				}
+			}
+		}
+	}
+
 	.leftSide {
 		.carPrices {
 			.box {
@@ -621,17 +640,17 @@ footer {
 @media (min-width: 576px) {
 	.modal-shadow{
 		.modal{
-			
+			min-width: 560px;
 			.orderCar{
 				
 				display: flex;
 				justify-content: center;
 				.orderLeftSide{
 					margin: 0 20px 0 0 ;
-					max-width: 400px;
+					max-width: 300px;
 				}
 				.orderRightSide{
-					max-width: 300px;
+					// max-width: 300px;
 					position: relative;
 
 				}
@@ -667,6 +686,27 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.modal-shadow{
+		.modal{
+			min-width: 750px;
+			margin: 0 auto;
+			.orderCar{
+				
+				display: flex;
+				justify-content: center;
+				.orderLeftSide{
+					margin: 0 20px 0 0 ;
+					min-width: 400px;
+					// max-width: 300px;
+				}
+				.orderRightSide{
+					// max-width: 300px;
+					position: relative;
+
+				}
+			}
+		}
+	}
 	.car {
 		display: flex;
 		padding: 0 20px;

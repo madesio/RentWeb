@@ -48,12 +48,28 @@ body {
 }
 
 .orderCar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 15px;
 }
 
 .orderCar .orderLeftSide {
   margin: 20px 20px 0 0;
-  max-width: 300px;
+  padding: 0 10px;
+  max-width: 340px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .orderCar .orderLeftSide .mainInfo {
@@ -63,6 +79,14 @@ body {
 .orderCar .orderLeftSide .mainInfo span {
   font-weight: 800;
   color: royalblue;
+}
+
+.orderCar .orderLeftSide .carDropdown {
+  padding: 10px;
+}
+
+.orderCar .orderLeftSide .carDropdown .cars {
+  height: 30px;
 }
 
 .orderCar .orderLeftSide .daysCount {
@@ -265,31 +289,27 @@ footer {
 @media (min-width: 576px) {
   .orderCar {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .orderCar .orderLeftSide {
     margin: 0 20px 0 0;
-    max-width: 400px;
   }
   .orderCar .orderRightSide {
-    max-width: 300px;
-  }
-  .orderCar .orderRightSide .orderBox {
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
-    margin: 0;
   }
-}
-
-@media (min-width: 992px) {
-  .orderCar .orderRightSide {
-    max-width: 400px;
+  .orderCar .orderRightSide .orderBox {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=reservation.css.map */
